@@ -1,9 +1,9 @@
 const snapResults = [
   {
-    result: "No"
+    result: "Sorry, you aren't. Hope they can remember you."
   },
   {
-    result: "Yes, you survived!"
+    result: "Yes, you survived 100%!"
   },
   {
     result: "Hahaha, you're dead!"
@@ -12,17 +12,16 @@ const snapResults = [
     result: "Are you kidding? You're dead!"
   },
   {
-    result: "Great for you. You survived!"
+    result: "Thanos has mercy on you. You survived!"
   },
   {
-    result: "Not today"
+    result: "Not today."
   }
 ];
 const snapBtn = document.querySelector("#snapBtn");
 const snapResult = document.querySelector("#snapResult");
-const result = document.querySelector("#result");
 
-quoteBtn.addEventListener("click", displayResult);
+snapBtn.addEventListener("click", displayResult);
 
 function displayResult() {
   let number = Math.floor(Math.random() * snapResults.length);
